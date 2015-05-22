@@ -1,5 +1,8 @@
 # STM32duino libraries
-Some libraries ported from AVR arduino to STM32duino project.
+I ported some Arduino libraries to STM32duino project.
+
+##
+At this time (22 May 2015) I have published only one library but I will add more libraries next month.
 
 Copy the folder **Serasidis_VS1003B_STM** in to your **arduino\hardware\Arduino_STM32\STM32F1\libraries** folder
 
