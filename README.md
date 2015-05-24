@@ -13,7 +13,9 @@ Copy the folder **Serasidis_VS1003B_STM** in to your **arduino\hardware\Arduino_
 Reference
 ---
 - [Visit STM32duino forum!][A]
+- [Arduino_STM32 (Github)][B]
 - [www.serasidis.gr](http://www.serasidis.gr)
 
 [A]:http://www.stm32duino.com
+[B]:https://github.com/rogerclarkmelbourne/Arduino_STM32
 
