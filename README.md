@@ -7,7 +7,7 @@ At this time (22 May 2015) I have published only one library but I will add more
 
 Installation
 ---
-Copy the folder **Serasidis_VS1003B_STM** in to your **arduino\hardware\Arduino_STM32\STM32F1\libraries** folder
+Copy the folder **libraries** in to your **arduino\hardware\Arduino_STM32\STM32F1\libraries** folder
 <br><br>
 
 Reference
