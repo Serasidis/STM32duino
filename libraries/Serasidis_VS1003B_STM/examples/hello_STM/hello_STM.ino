@@ -23,8 +23,6 @@
 #include <SPI.h>
 
 
-
-
 /*
  * VS1003 development board connected by it's header pins the following way:
  *
@@ -32,14 +30,14 @@
  * XDCS - D6   - PB10
  * DREQ - D7   - PA8
  * XRES - D8   - PA9
- * XCS  - D9   - PC7
+ * XCS  - D9   - PC14
  * SCLK - D13  - PA5
  * SI   - D11  - PA7
  * SO   - D12  - PA6
  * GND  - GND  -
  * 5V   - 5V   -
  */
-VS1003_STM player(PC7, PB10, PA8, PA9); // cs_pin, dcs_pin, dreq_pin, reset_pin
+VS1003_STM player(PC14, PB10, PA8, PA9); // cs_pin, dcs_pin, dreq_pin, reset_pin
 
 unsigned char HelloMP3[] = {
   0xFF,0xF2,0x40,0xC0,0x19,0xB7,0x00,0x14,0x02,0xE6,0x5C, /* ..@.......\ */
