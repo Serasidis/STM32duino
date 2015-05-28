@@ -17,6 +17,7 @@ The documentation for this library is at http://jeelabs.net/pub/docs/ethercard/.
     SO  - Pin PA6
     SI  - Pin PA7
     CS  - Pin PA8 # Selectable with the ether.begin() function
+    RST -   3.3V
 
 ## Credits
 
