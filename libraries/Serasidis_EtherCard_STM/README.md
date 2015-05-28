@@ -11,13 +11,23 @@ The documentation for this library is at http://jeelabs.net/pub/docs/ethercard/.
 
 ### PIN Connections (Using STM32F103):
 
-    VCC -   3.3V
-    GND -    GND
-    SCK - Pin PA5
-    SO  - Pin PA6
-    SI  - Pin PA7
-    CS  - Pin PA8 # Selectable with the ether.begin() function
-    RST -   3.3V
+|ENC28J60|STM32F103|
+|:------:|:-----:|
+|Vcc|3.3V|
+|SCK|PA5|
+|SO|PA6|
+|SI|PA7|
+|CS|PA8| # Selectable with the ether.begin() function
+|RST|3.3V|
+
+The **CS** pin is selectable with the ether.begin() function.
+
+e.g. If you want to use the **PA9** as **CS** pin then you can initiallize the ethernet module inside the sketch as:
+
+`if (ether.begin(sizeof Ethernet::buffer, mymac) == 0,`**`PA9`**`) `
+
+By default the pin **PA8** is used as **CS** (you don't have to initiallize it).
+
 
 ## Credits
 
