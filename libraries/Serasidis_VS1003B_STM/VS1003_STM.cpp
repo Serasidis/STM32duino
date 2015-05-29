@@ -9,6 +9,9 @@
   Home:  http://www.serasidis.gr
   email: avrsite@yahoo.gr
   
+  29 May 2015 - Added a fix for booting the VS1053B boards into
+                 mp3 decoding instead of booting into MIDI (modeSwitch function).
+  
  */
 
 // STL headers
@@ -318,6 +321,20 @@ void VS1003_STM::printDetails(void) const
     print_byte_register(i++);
 }
 
+/****************************************************************************/
+void VS1003_STM::modeSwitch(void)
+{
+	//GPIO_DDR
+	write_register(SCI_WRAMADDR, 0xc017);
+	write_register(SCI_WRAM, 0x0003);
+	//GPIO_ODATA
+	write_register(SCI_WRAMADDR, 0xc019);
+	write_register(SCI_WRAM, 0x0000);
+	
+	delay(100);
+	write_register(SCI_MODE, (1<<SM_SDINEW) | (1<<SM_RESET));
+	delay(100);
+}
 /****************************************************************************/
 
 void VS1003_STM::loadUserCode(const uint16_t* buf, size_t len) const
