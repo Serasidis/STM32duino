@@ -8,6 +8,9 @@
   Ported to STM32F103 by Vassilis Serasidis on 21 May 2015
   Home:  http://www.serasidis.gr
   email: avrsite@yahoo.gr
+  
+   29 May 2015 - Added a fix for booting the VS1053B boards into
+                 mp3 decoding instead of booting into MID (modeSwitch function).
 */
 
 #include <VS1003_STM.h>
@@ -198,6 +201,8 @@ void setup () {
                                                                                                                                        
   // initiate a player
   player.begin();
+  player.modeSwitch(); //Change mode from MIDI to MP3 decoding (Vassilis Serasidis).
+  
   // set maximum output volume
   player.setVolume(0x00);
 }
