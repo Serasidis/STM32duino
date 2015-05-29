@@ -19,11 +19,6 @@
 
 const uint8_t vs1003_chunk_size = 32;
 
-#undef PROGMEM
-#define PROGMEM __attribute__ ((section (".progmem.data"))) 
-#undef PSTR 
-#define PSTR(s) (__extension__({static char __c[] PROGMEM = (s); &__c[0];}))
-
 /****************************************************************************/
 
 // VS1003 SCI Write Command byte is 0x02
