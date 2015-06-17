@@ -18,3 +18,6 @@ PIN Connections
 **DO NOT FORGET TO ADD A RESISTOR 4k7 BETWEEN RESET AND 3.3V (OR RESET AND 5V) PINS ON ETHERNET SHIELD**
 
 ![alt tag](http://www.serasidis.gr/images/w5100_shield.jpg)
+![alt tag](http://www.serasidis.gr/images/w5100_module2.jpg)
+![alt tag](http://www.serasidis.gr/images/w5100_module1.jpg)
+
