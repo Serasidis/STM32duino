@@ -24,7 +24,7 @@ The **CS** pin is selectable with the ether.begin() function.
 
 e.g. If you want to use the **PA9** as **CS** pin then you can initiallize the ethernet module inside the sketch as:
 
-`if (ether.begin(sizeof Ethernet::buffer, mymac) == 0,`**`PA9`**`) `
+`if (ether.begin(sizeof Ethernet::buffer, mymac,`**`PA9`**`) == 0) `
 
 By default the pin **PA8** is used as **CS** (you don't have to initiallize it).
 
